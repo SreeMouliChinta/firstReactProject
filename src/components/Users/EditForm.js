@@ -9,9 +9,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 function EditForm() {
   let { id } = useParams();
-  console.log(id);
-  console.log(Number(id));
-  id = Number(id);
 
   const users = useSelector((state) => state.users);
 
@@ -25,7 +22,7 @@ function EditForm() {
 
   React.useEffect(() => {
     for (let user of users) {
-      if (user.id === id) {
+      if (user.id == id) {
         setUserName(user.name);
         setUserEmail(user.email);
         setUserPhone(user.phone);

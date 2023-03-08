@@ -57,7 +57,7 @@ export const reducer = (state = initialState, action) => {
     case EDITED_USER:
       const { editedUser } = action.payload;
       for (let user of users) {
-        editedUser.id !== user.id
+        Number(editedUser.id) !== user.id
           ? newUsers.push(user)
           : newUsers.push(editedUser);
       }
