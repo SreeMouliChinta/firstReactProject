@@ -24,7 +24,7 @@ function App() {
     <div className={classes.container}>
       <Card className={classes.App}>
         <Routes>
-          <Route path="/" element={<UserList />} />
+          <Route exact path="/" element={<UserList />} />
           <Route path="/addUser" element={<UserForm />} />
           <Route path="/favUsers" element={<FavUsers />} />
           <Route path="/trashUsers" element={<TrashUsers />} />

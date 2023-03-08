@@ -15,6 +15,11 @@
   padding: 0.25rem 1rem;
 }
 
+.header > b {
+  text-align: center;
+  padding: 0 1rem;
+}
+
 form div {
   display: flex;
   flex-direction: column;
