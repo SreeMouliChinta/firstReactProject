@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  height: 7rem;
+  width: 100%;
+  overflow: hidden;
+  font: inherit;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  background: #eee;
+  color: black;
+  padding: 0.25rem 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.input {
+  font-family: inherit;
+  margin: 1rem;
+  padding: 1rem;
+  width: 75%;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+.input:focus {
+  outline: 1px solid #aaa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+footer {
+  display: flex;
+}
+
+.route-button {
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+
+  font: inherit;
+  font-size: 16px;
+  border: 1px solid #fff;
+  background: #eee;
+  color: black;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s;
+}
+
+.route-button:hover,
+.route-button:active {
+  background: #ddd;
+  border-color: #ddd;
+}
+
+.route-button:focus {
+  border: 1px solid rgb(90, 90, 90);
+  outline: none;
+}
